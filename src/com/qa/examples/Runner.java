@@ -22,9 +22,18 @@ public class Runner {
 		raymond.greet();
 		raymond.salute();
 		
-		geoff.greet();
-		geoff.salute();
 		
+		
+		
+		geoff.setAge(getAge());
+
+		geoff.greet();
+		
+		geoff.salute();
+	}
+	
+	public static int getAge() {
+		return Integer.parseInt(Utilities.getInput("How old are you: "));
 	}
 
 }
